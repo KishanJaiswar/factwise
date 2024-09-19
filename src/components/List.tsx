@@ -137,7 +137,6 @@ const List = () => {
       [field]: e.target.value,
     });
   };
-  console.log('edited values', editedValues)
 
   // Save edited data
   const handleSave = (id: number) => {
@@ -304,7 +303,7 @@ const List = () => {
                           onClick={() => openDeleteConfirmation(celebrity.id)} // Trigger delete popup
                         />
                         <FaPen
-                          className="text-gray-500 cursor-pointer text-lg"
+                          className="text-blue-500 cursor-pointer text-lg"
                           onClick={() => handleEditClick(celebrity)}
                         />
                       </div>
